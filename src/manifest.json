@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "Yt Ad Skipper",
+	"version": "0.1.0",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "ytadskipper@ysj.works"
+		}
+	},
+	"content_scripts": [
+		{
+			"js": ["content.js"],
+			"matches": ["*://www.youtube.com/*"],
+			"run_at": "document_end"
+		}
+	],
+	"default_locale": "en",
+	"description": "__MSG_manifestDescription__",
+	"developer": {
+		"name": "_y_s",
+		"url": "https://github.com/ys-j/YtAdSkipper"
+	},
+	"icons": {
+		"48": "icon.svg",
+		"96": "icon.svg"
+	}
+}
